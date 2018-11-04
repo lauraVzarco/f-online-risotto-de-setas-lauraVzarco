@@ -5,7 +5,6 @@
 	"dependencies": {
 		"browser-sync": "^2.24.5",
 		"eslint": "^4.19.1",
-		"gulp": "^4",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
 		"gulp-combine-mq": "*",
@@ -20,9 +19,11 @@
 		"gulp-zip": "*",
 		"run-sequence": "*"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"gulp": "^4.0.0"
+	},
 	"scripts": {
-    "start": "gulp",
+		"start": "gulp",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
