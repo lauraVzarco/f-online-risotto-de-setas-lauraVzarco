@@ -33,6 +33,17 @@ function updateView() {
     buyButton.innerHTML = 'Comprar por ' + total + '€';
 }
 
+//alerta al comprar ingredientes
+function alertMsg(e) {
+    e.preventDefault();
+    if (total !== 0) {
+        alert('Gracias por realizar tu Compra');
+    } else {
+        alert('No puedes comprar si no has seleccionado nada');
+    }
+}
+
+
 //traer ingredientes
 
 function getRecipeInfo() {
@@ -75,5 +86,5 @@ function getRecipeInfo() {
 
 //llamar funciones
 getRecipeInfo();
-
+buyButton.addEventListener('click', alertMsg);
 
